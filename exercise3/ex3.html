@@ -1,0 +1,51 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<link href='style2.css' type='text/css' rel='stylesheet'/>
+		<script src='Checker.js' type='text/javascript'></script>
+	</head>
+	<body>
+		<form onsubmit='return checker()' action='Backend.php' method='post'>
+			<h2>Tech Store</h2><br>
+			<hr>
+			
+			<div>
+			<input type='email' name='name' placeholder='Enter Your Email'  autocomplete='on' id='email' required autofocus>
+			</div>
+			<br>
+			<div>
+			<input type='password' name='pw' id='pw' placeholder='Enter Password' required>
+			
+		</div>
+		<br>
+			<div>
+			    <p>iPhone 14 Pro &nbsp; Price: $799.00<br>
+			    <input placeholder="Qty" type='number' min='0' name='item1' id='item1' required><br></p>
+			</div>
+
+			<div>
+				<p>iPad Air 5 &nbsp; Price: $899.00<br> 
+			    <input type='number' min='0' placeholder="Qty" name='item2' id='item2' required><br></p>
+			</div>
+
+			<div>
+			    <p>Macbook Air &nbsp; Price: $1099.00<br>
+			    <input type='number' min='0' placeholder="Qty" name='item3' id='item3' required><br></p> 
+			</div>
+			<br>
+			<h4>Shipping</h4>
+			<input type='radio' name='shipping' value='Free' id='ship' required>
+			<label for="Free">Free Shipping</label>
+			<input type='radio' name='shipping' value='Standard' id='ship'required>
+			<label for="Standard">$5.00 3 Day Shipping</label>
+			<input type='radio' name='shipping' value='Overnight'id='ship' required>
+			<label for="Overnight">$50.00 Overnight Shipping</label>
+			<hr>
+			<input type='submit'><br>
+<br>
+
+			<input type='reset'>
+		</form>
+	</body>
+</html>
